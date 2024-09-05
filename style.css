@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "quicksand, sans-serif";
+}
+ul {
+
+list-style: none ;
+}
+a {
+    text-decoration: none;
+}
+.primary-text{
+color: rgb(249, 230, 16);
+
+}
+.btn{  
+display: inline-block;
+padding: 15px 30px;
+border: none;
+border-radius: 15px;
+}
+.btn-primary{
+color: #fff;
+border:2px solid #fff ;
+
+}
+.btn-primary:hover{
+    background: orangered;
+}
+
+
+header {
+    height: 100vh;
+    background: url("./img/piza.webp") center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: orangered;
+}
+
+#navbar img{
+width: 80px;
+margin-left: 100px;
+}
+#navbar ul {
+display: flex;
+margin-right: 100px;
+
+}
+#navbar ul li a{
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+}
+#navbar ul li a:hover {
+    border-bottom: 2px solid #e4b95b;
+}
+header .content{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 75vh;
+}
+
+header .content h1{
+    font-size: 40px;
+    color: #fff;
+
+}
+
+header .content p {
+    margin: 20px 0 40px;
+    color: #fff;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70;
+    width: 100px;
+   background: rgb(0,0,0,0.6);
+}
+header *{
+    z-index: 10;
+}
